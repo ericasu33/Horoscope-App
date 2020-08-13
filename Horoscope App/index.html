@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <title>jQuery Project - Horoscope </title>
+  </head>
+  <body>
+    <header>
+      <h1><span class="hinge">Daily Horoscope</span></h1>
+      <div class="home_date">
+      <img id="home" src = "https://image.freepik.com/free-vector/flat-zodiac-wheel-galaxy-background_23-2148168948.jpg" alt = "home_button">
+      <p id="today"></p>
+      </div>
+        <h3> Choose your Zodiac </h3>
+        <audio src="song.mp3"></audio>
+        <button id="music">
+          <i class="fas fa-volume-up"></i>
+        </button>
+    </header>
+    <main>
+      <form id="iconZodiac">
+        <input class="icon aries" type="button" name="aries" value="aries">
+        <input class="icon taurus" type="button" name="taurus" value="taurus">
+        <input class="icon gemini" type="button" name="gemini" value="gemini">
+        <input class="icon cancer" type="button" name="cancer" value="cancer">
+        <input class="icon leo" type="button" name="leo" value="leo">
+        <input class="icon virgo" type="button" name="virgo" value="virgo">
+        <input class="icon libra" type="button" name="libra" value="libra">
+        <input class="icon scorpio" type="button" name="scorpio" value="scorpio">
+        <input class="icon sagittarius" type="button" name="sagittarius" value="sagittarius">
+        <input class="icon capricorn" type="button" name="capricorn" value="capricorn">
+        <input class="icon aquarius" type="button" name="aquarius" value="aquarius">
+        <input class="icon pisces" type="button" name="pisces" value="pisces">
+      </form>
+
+      <section class="findZodiacflex">
+        <form id="findZodiac">
+          <label for="month"></label>
+            <select name="month" id="month">
+              <option value = "Month"> Month </option>
+              <option value = "January"> January </option>
+              <option value = "February"> February </option>
+              <option value = "March"> March </option>
+              <option value = "April"> April </option>
+              <option value = "May"> May </option>
+              <option value = "June"> June </option>
+              <option value = "July"> July </option>
+              <option value = "August"> August </option>
+              <option value = "September"> September </option>
+              <option value = "October"> October </option>
+              <option value = "November"> November </option>
+              <option value = "December"> December </option>
+            </select>
+          <label for="date"></label>
+            <select name="date" id="date">
+              <option value = "Date"> Date </option>
+              <option value = "1"> 1 </option>
+              <option value = "2"> 2 </option>
+              <option value = "3"> 3 </option>
+              <option value = "4"> 4 </option>
+              <option value = "5"> 5 </option>
+              <option value = "6"> 6 </option>
+              <option value = "7"> 7 </option>
+              <option value = "8"> 8 </option>
+              <option value = "9"> 9 </option>
+              <option value = "10"> 10 </option>
+              <option value = "11"> 11 </option>
+              <option value = "12"> 12 </option>
+              <option value = "13"> 13 </option>
+              <option value = "14"> 14 </option>
+              <option value = "15"> 15 </option>
+              <option value = "16"> 16 </option>
+              <option value = "17"> 17 </option>
+              <option value = "18"> 18 </option>
+              <option value = "19"> 19 </option>
+              <option value = "20"> 20 </option>
+              <option value = "21"> 21 </option>
+              <option value = "22"> 22 </option>
+              <option value = "23"> 23 </option>
+              <option value = "24"> 24 </option>
+              <option value = "25"> 25 </option>
+              <option value = "26"> 26 </option>
+              <option value = "27"> 27 </option>
+              <option value = "28"> 28 </option>
+              <option value = "29"> 29 </option>
+              <option value = "30"> 30 </option>
+              <option value = "31"> 31 </option>
+            </select>
+          <button type="submit" value="submit" id="button"> Find My Zodiac </button>
+        </form>
+      </section>
+
+      <div class="results">
+      </div>
+    </main>
+
+    <div class="footerflex">
+    <footer>
+      <div class="copyright">
+        <span>&copy icon img from freepik @painterr</span>
+        <span>&copy background img from wallpaperaccess</span>
+        <span>&copy <a href="https://www.youtube.com/watch?v=1GPsepFmNes">Audio Source Here</a>
+      </div>
+    </footer>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type = "text/javascript" src = "index.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  </body>
+</html>

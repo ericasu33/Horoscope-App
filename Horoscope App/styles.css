@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*var*/
+:root {
+  --aries-img: url(https://image.freepik.com/free-vector/vintage-thin-line-aries-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-6.jpg);
+  --taurus-img: url(https://image.freepik.com/free-vector/vintage-thin-line-taurus-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-15.jpg);
+  --gemini-img: url(https://image.freepik.com/free-vector/vintage-thin-line-gemini-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-9.jpg);
+  --cancer-img: url(https://image.freepik.com/free-vector/vintage-thin-line-cancer-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-7.jpg);
+  --leo-img: url(https://image.freepik.com/free-vector/vintage-thin-line-leo-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-10.jpg);
+  --virgo-img: url(https://image.freepik.com/free-vector/vintage-thin-line-virgo-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-16.jpg);
+  --libra-img: url(https://image.freepik.com/free-vector/vintage-thin-line-libra-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-11.jpg);
+  --scorpio-img: url(https://image.freepik.com/free-vector/vintage-thin-line-scorpio-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-14.jpg);
+  --sagittarius-img: url(https://image.freepik.com/free-vector/vintage-thin-line-sagittarius-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-13.jpg);
+  --capricorn-img: url(https://image.freepik.com/free-vector/vintage-thin-line-capricorn-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-8.jpg);
+  --aquarius-img:url(https://image.freepik.com/free-vector/vintage-thin-line-aquarius-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-5.jpg);
+  --pisces-img: url(https://image.freepik.com/free-vector/vintage-thin-line-pisces-zodiac-sign-label-retro-vector-astrological-symbol-mystic-sacred-geometry-element-emblem-logo-stroke-outline-illustration_163463-12.jpg);
+  --icon-gradient: linear-gradient(0deg,rgba(153, 194, 255, 0.3), rgba(128, 179, 255, 0.3));
+}
+
+header, footer, main, .icon, #month, #date, #button {
+  font-family: 'Slabo 27px', serif;
+}
+
+body {
+    background-image: linear-gradient(0deg,rgba(153, 194, 255, 0.23),
+        rgba(128, 179, 255, 0.2)),
+    url("https://wallpaperaccess.com/full/188673.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFF;
+    min-height: 100vh;
+    position: relative;
+}
+
+audio {
+  display: none;
+}
+
+#music {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #FFF;
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  width: 2.7rem;
+  padding: 0.3rem;
+  border-radius: 2px;
+  background: #061639;
+  opacity: 0.6;
+  cursor: pointer;
+  outline: none;
+}
+
+main {
+  padding-bottom: 3.25rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.768rem;
+  font-weight: lighter;
+  margin-top: 1.875rem;
+  letter-spacing: 0.125rem;
+}
+
+h2 {
+  letter-spacing: 0.125rem;
+}
+
+h3 {
+  display: none;
+}
+
+h4 {
+  display: inline-block;
+  color: #FDE569;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.125rem;
+  margin: 0 auto;
+  text-align: left;
+
+}
+
+.results {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.results > p {
+  display: inline;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  word-wrap: break-word;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.home_date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1.875rem;
+  font-size: 3.052rem;
+}
+
+input[type=button] {
+  border: 2px solid #FDE569;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: 1rem;
+  color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#iconZodiac {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-top: 3.75rem;
+}
+
+.findZodiacflex {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 3.25rem;
+}
+
+select {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 5%;
+  background-color: #FFF;
+  border: none;
+  color: #6881FD;
+  font-size: 1rem;
+}
+
+#date {
+  padding-right: 2rem;
+}
+
+#button {
+  padding: 0.75rem;
+  border-radius: 5%;
+  background-color: #061639 /*#000033*/;
+  border: none;
+  color: #FDE569;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.copyright {
+  font-size: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF
+}
+
+.footerflex {
+  display: flex;
+  justify-content: center;
+}
+
+/*hidden until js */
+
+#home {
+  display: none;
+  width:5rem;
+  height:5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.052rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.hinge {
+  animation-duration: 2s;
+}
+
+
+/*pseudo*/
+.icon:hover {
+  width: 15rem;
+  height: 15rem;
+  color: #FBD204;
+  font-size: 210%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.hinge:hover {
+  cursor: not-allowed;
+}
+
+#home:hover {
+  cursor: pointer;
+}
+
+#month:hover {
+  border: 3px solid #061639;
+}
+
+#date:hover {
+  border: 3px solid #061639;
+}
+
+#button:hover {
+  border: 3px solid #FBD204;
+}
+
+#music:hover {
+  opacity: 0.8;
+  color: #FBD204;
+}
+
+a:hover {
+  color: #FBD204;
+}
+
+/*img icon hover*/
+.aries:hover  {background-image: var(--icon-gradient), var(--aries-img);}
+.taurus:hover {background-image: var(--icon-gradient), var(--taurus-img);}
+.gemini:hover {background-image: var(--icon-gradient), var(--gemini-img);}
+.cancer:hover {background-image: var(--icon-gradient), var(--cancer-img);}
+.leo:hover {background-image: var(--icon-gradient), var(--leo-img);}
+.virgo:hover {background-image: var(--icon-gradient), var(--virgo-img);}
+.libra:hover {background-image: var(--icon-gradient), var(--libra-img);}
+.scorpio:hover {background-image: var(--icon-gradient), var(--scorpio-img);}
+.sagittarius:hover {background-image: var(--icon-gradient), var(--sagittarius-img);}
+.capricorn:hover {background-image: var(--icon-gradient), var(--capricorn-img);}
+.aquarius:hover {background-image: var(--icon-gradient), var(--aquarius-img);}
+.pisces:hover {background-image: var(--icon-gradient), var(--pisces-img);}
+
+ /*img icon*/
+.aries {background-image: var(--aries-img);}
+.taurus {background-image: var(--taurus-img);}
+.gemini {background-image: var(--gemini-img);}
+.cancer {background-image: var(--cancer-img);}
+.leo {background-image: var(--leo-img);}
+.virgo {background-image: var(--virgo-img);}
+.libra {background-image: var(--libra-img);}
+.scorpio {background-image: var(--scorpio-img);}
+.sagittarius {background-image: var(--sagittarius-img);}
+.capricorn {background-image: var(--capricorn-img);}
+.aquarius {background-image: var(--aquarius-img);}
+.pisces {background-image: var(--pisces-img);}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #iconZodiac {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  #findZodiac {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  #month, #date, #button {
+    margin: 0.75rem;
+  }
+
+  input[type=button] {
+    border: 2px solid #FDE569;
+    width: 8.5rem;
+    height: 8.5rem;
+    margin: 1rem;
+    color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .results {
+    width: 68%;
+    margin: 0 auto;
+  }
+
+  h1, #today {
+    font-size: 2.441rem;
+  }
+
+  h3 {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  header {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #music, audio {
+    position: relative;
+    left: 0;
+    margin-top: 1rem;
+  }
+
+  #music:hover {
+    opacity: 0.6;
+    color: #FFF;
+  }
+
+  .copyright {
+    margin-top: 2rem;
+  }
